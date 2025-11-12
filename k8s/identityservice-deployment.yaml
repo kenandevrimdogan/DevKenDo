@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: identityservice
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: identityservice
+  template:
+    metadata:
+      labels:
+        app: identityservice
+    spec:
+      containers:
+        - name: identityservice
+          image: devkendo/identityservice:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Production"
+            - name: CONNECTION_STRING
+              valueFrom:
+                secretKeyRef:
+                  name: identityservice-secrets
+                  key: DbConnectionString
+            - name: FEATURE_FLAGS
+              valueFrom:
+                configMapKeyRef:
+                  name: identityservice-config
+                  key: featureFlags
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: identityservice
+spec:
+  selector:
+    app: identityservice
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP

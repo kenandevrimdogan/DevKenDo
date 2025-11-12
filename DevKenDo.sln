@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+#
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A20B74C2-71E3-4268-97BF-D82450DF1D73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{08FE9B68-8AE5-4385-B8C9-5226DA1842A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.BuildingBlocks.Core", "src\BuildingBlocks\DevKenDo.BuildingBlocks.Core\DevKenDo.BuildingBlocks.Core.csproj", "{DE4A30FD-E9B2-4C4D-A71F-9DF274157486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.BuildingBlocks.EventBus", "src\BuildingBlocks\DevKenDo.BuildingBlocks.EventBus\DevKenDo.BuildingBlocks.EventBus.csproj", "{7EAA0679-B24F-4454-BF9E-A416C9C1E1BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.BuildingBlocks.Outbox", "src\BuildingBlocks\DevKenDo.BuildingBlocks.Outbox\DevKenDo.BuildingBlocks.Outbox.csproj", "{5064D9A2-C50A-488E-98A9-CFFAA6CC670A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.BuildingBlocks.Resilience", "src\BuildingBlocks\DevKenDo.BuildingBlocks.Resilience\DevKenDo.BuildingBlocks.Resilience.csproj", "{31ACE224-1A2E-41F4-B108-6E8E118A51F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.BuildingBlocks.SharedKernel", "src\BuildingBlocks\DevKenDo.BuildingBlocks.SharedKernel\DevKenDo.BuildingBlocks.SharedKernel.csproj", "{94FF8015-47F5-4153-BE90-F0018161BE67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9DEF3D3B-8C7D-403D-B115-F20BB144C179}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityService", "IdentityService", "{BA097E88-EA8E-4D40-AD5B-B9B953943C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.Identity.API", "src\Services\IdentityService\DevKenDo.Identity.API\DevKenDo.Identity.API.csproj", "{C82B44DB-8205-428D-8C47-11095D7A8CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.Identity.Application", "src\Services\IdentityService\DevKenDo.Identity.Application\DevKenDo.Identity.Application.csproj", "{4F6B8CE6-75AF-4F4E-9986-0DE3BED79526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.Identity.Domain", "src\Services\IdentityService\DevKenDo.Identity.Domain\DevKenDo.Identity.Domain.csproj", "{C33830D6-D830-4630-8AC6-1275CC293AA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.Identity.Infrastructure", "src\Services\IdentityService\DevKenDo.Identity.Infrastructure\DevKenDo.Identity.Infrastructure.csproj", "{35827DF5-BA23-4922-B694-BE61C00E6460}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{41654B76-F02F-4856-8F37-F498C9D51226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevKenDo.AppHost", "src\Gateways\DevKenDo.AppHost\DevKenDo.AppHost.csproj", "{B2CF2F04-C174-4B51-84FB-8077E446CC1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{E2E0D3DE-9E24-4FC1-AD4F-B36BB742519D}"
+	ProjectSection(SolutionItems) = preProject
+		identityservice-deployment.yaml = identityservice-deployment.yaml
+		secrets.yaml = secrets.yaml
+		configmap.yaml = configmap.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE4A30FD-E9B2-4C4D-A71F-9DF274157486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4A30FD-E9B2-4C4D-A71F-9DF274157486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4A30FD-E9B2-4C4D-A71F-9DF274157486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4A30FD-E9B2-4C4D-A71F-9DF274157486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EAA0679-B24F-4454-BF9E-A416C9C1E1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EAA0679-B24F-4454-BF9E-A416C9C1E1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EAA0679-B24F-4454-BF9E-A416C9C1E1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EAA0679-B24F-4454-BF9E-A416C9C1E1BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5064D9A2-C50A-488E-98A9-CFFAA6CC670A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5064D9A2-C50A-488E-98A9-CFFAA6CC670A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5064D9A2-C50A-488E-98A9-CFFAA6CC670A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5064D9A2-C50A-488E-98A9-CFFAA6CC670A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31ACE224-1A2E-41F4-B108-6E8E118A51F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31ACE224-1A2E-41F4-B108-6E8E118A51F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31ACE224-1A2E-41F4-B108-6E8E118A51F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31ACE224-1A2E-41F4-B108-6E8E118A51F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94FF8015-47F5-4153-BE90-F0018161BE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FF8015-47F5-4153-BE90-F0018161BE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FF8015-47F5-4153-BE90-F0018161BE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FF8015-47F5-4153-BE90-F0018161BE67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82B44DB-8205-428D-8C47-11095D7A8CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82B44DB-8205-428D-8C47-11095D7A8CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82B44DB-8205-428D-8C47-11095D7A8CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82B44DB-8205-428D-8C47-11095D7A8CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6B8CE6-75AF-4F4E-9986-0DE3BED79526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6B8CE6-75AF-4F4E-9986-0DE3BED79526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6B8CE6-75AF-4F4E-9986-0DE3BED79526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6B8CE6-75AF-4F4E-9986-0DE3BED79526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33830D6-D830-4630-8AC6-1275CC293AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33830D6-D830-4630-8AC6-1275CC293AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33830D6-D830-4630-8AC6-1275CC293AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33830D6-D830-4630-8AC6-1275CC293AA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35827DF5-BA23-4922-B694-BE61C00E6460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35827DF5-BA23-4922-B694-BE61C00E6460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35827DF5-BA23-4922-B694-BE61C00E6460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35827DF5-BA23-4922-B694-BE61C00E6460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CF2F04-C174-4B51-84FB-8077E446CC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CF2F04-C174-4B51-84FB-8077E446CC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CF2F04-C174-4B51-84FB-8077E446CC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CF2F04-C174-4B51-84FB-8077E446CC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08FE9B68-8AE5-4385-B8C9-5226DA1842A1} = {A20B74C2-71E3-4268-97BF-D82450DF1D73}
+		{DE4A30FD-E9B2-4C4D-A71F-9DF274157486} = {08FE9B68-8AE5-4385-B8C9-5226DA1842A1}
+		{7EAA0679-B24F-4454-BF9E-A416C9C1E1BF} = {08FE9B68-8AE5-4385-B8C9-5226DA1842A1}
+		{5064D9A2-C50A-488E-98A9-CFFAA6CC670A} = {08FE9B68-8AE5-4385-B8C9-5226DA1842A1}
+		{31ACE224-1A2E-41F4-B108-6E8E118A51F1} = {08FE9B68-8AE5-4385-B8C9-5226DA1842A1}
+		{94FF8015-47F5-4153-BE90-F0018161BE67} = {08FE9B68-8AE5-4385-B8C9-5226DA1842A1}
+		{9DEF3D3B-8C7D-403D-B115-F20BB144C179} = {A20B74C2-71E3-4268-97BF-D82450DF1D73}
+		{BA097E88-EA8E-4D40-AD5B-B9B953943C79} = {9DEF3D3B-8C7D-403D-B115-F20BB144C179}
+		{C82B44DB-8205-428D-8C47-11095D7A8CB4} = {BA097E88-EA8E-4D40-AD5B-B9B953943C79}
+		{4F6B8CE6-75AF-4F4E-9986-0DE3BED79526} = {BA097E88-EA8E-4D40-AD5B-B9B953943C79}
+		{C33830D6-D830-4630-8AC6-1275CC293AA9} = {BA097E88-EA8E-4D40-AD5B-B9B953943C79}
+		{35827DF5-BA23-4922-B694-BE61C00E6460} = {BA097E88-EA8E-4D40-AD5B-B9B953943C79}
+		{41654B76-F02F-4856-8F37-F498C9D51226} = {A20B74C2-71E3-4268-97BF-D82450DF1D73}
+		{B2CF2F04-C174-4B51-84FB-8077E446CC1E} = {41654B76-F02F-4856-8F37-F498C9D51226}
+	EndGlobalSection
+EndGlobal
